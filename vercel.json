@@ -6,8 +6,5 @@
             "use": "@vercel/static"
         }
     ],
-    "routes": [
-        { "handle": "filesystem" },
-        { "src": "/(.*)", "dest": "/index.php" }
-    ]
+    "routes": [{ "handle": "filesystem" }, { "src": "/(.*)", "dest": "/" }]
 }
