@@ -2,9 +2,52 @@
     "version": 2,
     "builds": [
         {
-            "src": "public/**",
-            "use": "@vercel/static"
+            "src": "public/**/*",
+            "use": "@vercel/node"
         }
     ],
-    "routes": [{ "handle": "filesystem" }, { "src": "/(.*)", "dest": "/" }]
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "public/index.php"
+        }
+    ],
+    "env": {
+        "APP_ENV": "production",
+        "APP_KEY": "base64:qSI6SADBHBcVANX5QW/01V19fBSFrhlNk39tTTKJrK4=",
+        "APP_DEBUG": "false",
+        "APP_URL": "http://elovya-laundry.test/",
+        "LOG_CHANNEL": "stack",
+        "DB_CONNECTION": "mysql",
+        "DB_HOST": "127.0.0.1",
+        "DB_PORT": "3306",
+        "DB_DATABASE": "laundry",
+        "DB_USERNAME": "root",
+        "DB_PASSWORD": "",
+        "CACHE_DRIVER": "file",
+        "QUEUE_CONNECTION": "sync",
+        "SESSION_DRIVER": "file",
+        "SESSION_LIFETIME": 120,
+        "MEMCACHED_HOST": "127.0.0.1"
+    },
+    "build": {
+        "env": {
+            "APP_ENV": "production",
+            "APP_KEY": "base64:qSI6SADBHBcVANX5QW/01V19fBSFrhlNk39tTTKJrK4=",
+            "APP_DEBUG": "false",
+            "APP_URL": "http://elovya-laundry.test/",
+            "LOG_CHANNEL": "stack",
+            "DB_CONNECTION": "mysql",
+            "DB_HOST": "127.0.0.1",
+            "DB_PORT": "3306",
+            "DB_DATABASE": "laundry",
+            "DB_USERNAME": "root",
+            "DB_PASSWORD": "",
+            "CACHE_DRIVER": "file",
+            "QUEUE_CONNECTION": "sync",
+            "SESSION_DRIVER": "file",
+            "SESSION_LIFETIME": 120,
+            "MEMCACHED_HOST": "127.0.0.1"
+        }
+    }
 }
