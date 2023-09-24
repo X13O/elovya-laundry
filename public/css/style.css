@@ -1,0 +1,35 @@
+@media only screen and (max-width: 768px) {
+    .box-area {
+        margin: 0 10px;
+    }
+    .left-box {
+        height: 100px;
+        overflow: hidden;
+    }
+    .right-box {
+        padding: 20px;
+    }
+}
+
+.navbar-nav li a {
+    color: #181818 !important;
+}
+.navbar-nav li a:hover {
+    color: #7952b3 !important;
+}
+.form-control-user {
+    border-radius: 50px;
+}
+.border-0 {
+    border: 0px !important;
+}
+.bg-0 {
+    background: transparent !important;
+}
+
+.navbar-nav li a.putih {
+    color: #f1f8ff !important;
+}
+.navbar-nav li a.putih:hover {
+    color: #ffffff !important;
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Elovya Laundry",
+    "short_name": "ELV",
+    "start_url": "/",
+    "background_color": "#6777ef",
+    "description": "Aplikasi Elovya Laundry",
+    "display": "fullscreen",
+    "theme_color": "#6777ef",
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
